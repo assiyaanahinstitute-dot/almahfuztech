@@ -1,0 +1,1213 @@
+/* =========================================
+   ALMAHFUZTECH — ABOUT PAGE
+   ========================================= */
+
+.about-page {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ABOUT HERO
+   ========================================= */
+
+.about-hero {
+    position: relative;
+
+    min-height: 72vh;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding:
+        170px 7% 100px;
+
+    overflow: hidden;
+}
+
+
+.about-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    top: -250px;
+    right: -150px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(139, 92, 246, 0.14),
+            transparent 70%
+        );
+
+    filter: blur(40px);
+
+    pointer-events: none;
+}
+
+
+.about-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    left: -180px;
+    bottom: -200px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(59, 130, 246, 0.09),
+            transparent 70%
+        );
+
+    filter: blur(40px);
+
+    pointer-events: none;
+}
+
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+
+    animation:
+        aboutHeroReveal
+        1s
+        cubic-bezier(0.16, 1, 0.3, 1)
+        both;
+}
+
+
+.about-hero .section-label {
+    margin-bottom: 25px;
+}
+
+
+.about-hero h1 {
+    max-width: 900px;
+
+    margin-bottom: 30px;
+
+    font-size:
+        clamp(
+            3.5rem,
+            8vw,
+            7rem
+        );
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    color: #ffffff;
+}
+
+
+.about-hero-description {
+    max-width: 620px;
+
+    color: #9999a3;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+.about-hero-number {
+    position: relative;
+    z-index: 2;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+    font-size:
+        clamp(
+            6rem,
+            15vw,
+            13rem
+        );
+
+    font-weight: 800;
+
+    line-height: 0.8;
+
+    letter-spacing: -10px;
+
+    user-select: none;
+
+    animation:
+        numberReveal
+        1.2s
+        ease
+        both;
+}
+
+
+/* =========================================
+   SHARED SECTION LABEL
+   ========================================= */
+
+.about-section-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+
+    color: #777780;
+
+    font-size: 0.68rem;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+.about-section-label span:last-child {
+    color: #8b5cf6;
+}
+
+
+/* =========================================
+   INTRODUCTION
+   ========================================= */
+
+.about-introduction {
+    position: relative;
+
+    padding:
+        120px 7%;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+}
+
+
+.about-introduction-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 100px;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+.about-introduction-heading h2 {
+    max-width: 600px;
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            4.8rem
+        );
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    color: #ffffff;
+}
+
+
+.about-introduction-content {
+    max-width: 600px;
+
+    padding-top: 10px;
+}
+
+
+.about-introduction-content p {
+    margin-bottom: 25px;
+
+    color: #9999a3;
+
+    font-size: 0.95rem;
+
+    line-height: 1.9;
+}
+
+
+.about-introduction-content strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   VALUES
+   ========================================= */
+
+.about-values {
+    position: relative;
+
+    padding:
+        120px 7%;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.015),
+            transparent
+        );
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+}
+
+
+.about-values-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+.about-value-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    transition:
+        transform 0.45s
+            cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+
+.about-value-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    right: -60px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(139, 92, 246, 0.16),
+            transparent 70%
+        );
+
+    filter: blur(20px);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.about-value-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(139, 92, 246, 0.35);
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+.about-value-card:hover::before {
+    transform: scale(1.4);
+}
+
+
+.about-card-number {
+    position: absolute;
+
+    top: 30px;
+    right: 30px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.15
+        );
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.about-value-card h3 {
+    position: relative;
+
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    letter-spacing: -0.5px;
+}
+
+
+.about-value-card p {
+    position: relative;
+
+    color: #8e8e98;
+
+    font-size: 0.86rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.about-skills {
+    position: relative;
+
+    padding:
+        120px 7%;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+}
+
+
+.about-skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 100px;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+.about-skills-heading h2 {
+    max-width: 600px;
+
+    margin-bottom: 25px;
+
+    font-size:
+        clamp(
+            2.5rem,
+            5vw,
+            4.5rem
+        );
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    color: #ffffff;
+}
+
+
+.about-skills-heading p {
+    max-width: 500px;
+
+    color: #8e8e98;
+
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+}
+
+
+.about-tech-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+
+.about-tech-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 25px 5px;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+
+    transition:
+        padding-left 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.about-tech-item:nth-child(odd) {
+    padding-right: 25px;
+}
+
+
+.about-tech-item:nth-child(even) {
+    padding-left: 25px;
+
+    border-left:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+
+.about-tech-item span {
+    color: #777780;
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+}
+
+
+.about-tech-item strong {
+    color: #d8d8de;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+}
+
+
+.about-tech-item:hover {
+    background:
+        rgba(139, 92, 246, 0.04);
+}
+
+
+.about-tech-item:hover strong {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   PHILOSOPHY
+   ========================================= */
+
+.about-philosophy {
+    position: relative;
+
+    padding:
+        120px 7%;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+    overflow: hidden;
+}
+
+
+.about-philosophy::before {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(139, 92, 246, 0.10),
+            transparent 70%
+        );
+
+    filter: blur(50px);
+
+    pointer-events: none;
+}
+
+
+.about-philosophy-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.about-quote-mark {
+    margin-bottom: 15px;
+
+    color: #8b5cf6;
+
+    font-size: 5rem;
+
+    font-family: Georgia, serif;
+
+    line-height: 0.7;
+}
+
+
+.about-philosophy-content h2 {
+    margin-bottom: 30px;
+
+    font-size:
+        clamp(
+            2.2rem,
+            5vw,
+            4.8rem
+        );
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    color: #ffffff;
+}
+
+
+.about-philosophy-content > p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #90909a;
+
+    font-size: 0.92rem;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.about-cta {
+    position: relative;
+
+    padding:
+        130px 7%;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(139, 92, 246, 0.025),
+            transparent
+        );
+}
+
+
+.about-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(
+            -50%,
+            -50%
+        );
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(139, 92, 246, 0.12),
+            transparent 70%
+        );
+
+    filter: blur(50px);
+
+    pointer-events: none;
+}
+
+
+.about-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.about-cta h2 {
+    max-width: 850px;
+
+    margin:
+        20px auto;
+
+    font-size:
+        clamp(
+            3rem,
+            7vw,
+            6.5rem
+        );
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    color: #ffffff;
+}
+
+
+.about-cta p:not(.section-label) {
+    max-width: 550px;
+
+    margin:
+        0 auto 35px;
+
+    color: #92929b;
+
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+}
+
+
+.about-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes aboutHeroReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes numberReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =========================================
+   LIGHT MODE
+   ========================================= */
+
+body.light-mode .about-hero h1,
+body.light-mode .about-introduction-heading h2,
+body.light-mode .about-skills-heading h2,
+body.light-mode .about-philosophy-content h2,
+body.light-mode .about-cta h2 {
+    color: #171717;
+}
+
+
+body.light-mode .about-hero-description,
+body.light-mode .about-introduction-content p,
+body.light-mode .about-skills-heading p,
+body.light-mode .about-value-card p,
+body.light-mode .about-philosophy-content > p:last-child,
+body.light-mode .about-cta p:not(.section-label) {
+    color: #5e5e65;
+}
+
+
+body.light-mode .about-introduction-content strong {
+    color: #222222;
+}
+
+
+body.light-mode .about-hero-number {
+    color:
+        rgba(
+            20,
+            20,
+            30,
+            0.06
+        );
+}
+
+
+body.light-mode .about-section-label {
+    color: #777780;
+}
+
+
+body.light-mode .about-values {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.015),
+            transparent
+        );
+}
+
+
+body.light-mode .about-value-card {
+    border-color:
+        rgba(0, 0, 0, 0.08);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.85),
+            rgba(245, 245, 248, 0.7)
+        );
+
+    box-shadow:
+        0 10px 40px
+        rgba(0, 0, 0, 0.04);
+}
+
+
+body.light-mode .about-value-card:hover {
+    border-color:
+        rgba(104, 65, 216, 0.25);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+body.light-mode .about-value-card h3 {
+    color: #222222;
+}
+
+
+body.light-mode .about-card-number {
+    color:
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+}
+
+
+body.light-mode .about-tech-list {
+    border-top-color:
+        rgba(0, 0, 0, 0.08);
+}
+
+
+body.light-mode .about-tech-item {
+    border-bottom-color:
+        rgba(0, 0, 0, 0.08);
+}
+
+
+body.light-mode .about-tech-item:nth-child(even) {
+    border-left-color:
+        rgba(0, 0, 0, 0.08);
+}
+
+
+body.light-mode .about-tech-item strong {
+    color: #333338;
+}
+
+
+body.light-mode .about-tech-item:hover strong {
+    color: #171717;
+}
+
+
+body.light-mode .about-philosophy {
+    background:
+        rgba(255, 255, 255, 0.15);
+}
+
+
+body.light-mode .about-philosophy::before,
+body.light-mode .about-cta::before {
+    opacity: 0.6;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .about-hero {
+        min-height: auto;
+
+        align-items: flex-start;
+
+        padding:
+            150px 5% 90px;
+    }
+
+
+    .about-hero-number {
+        position: absolute;
+
+        right: 5%;
+        bottom: 60px;
+
+        font-size: 9rem;
+    }
+
+
+    .about-introduction,
+    .about-values,
+    .about-skills,
+    .about-philosophy,
+    .about-cta {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .about-introduction-grid,
+    .about-skills-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .about-hero {
+        padding:
+            130px 20px 80px;
+    }
+
+
+    .about-hero h1 {
+        margin-bottom: 22px;
+
+        font-size:
+            clamp(
+                3rem,
+                15vw,
+                5rem
+            );
+
+        letter-spacing: -3px;
+    }
+
+
+    .about-hero-description {
+        font-size: 0.88rem;
+
+        line-height: 1.75;
+    }
+
+
+    .about-hero-number {
+        right: 20px;
+        bottom: 35px;
+
+        font-size: 5rem;
+
+        letter-spacing: -5px;
+    }
+
+
+    .about-section-label {
+        margin-bottom: 40px;
+
+        font-size: 0.62rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    .about-introduction,
+    .about-values,
+    .about-skills,
+    .about-philosophy,
+    .about-cta {
+        padding:
+            90px 20px;
+    }
+
+
+    .about-introduction-grid,
+    .about-skills-grid {
+        gap: 40px;
+    }
+
+
+    .about-introduction-heading h2,
+    .about-skills-heading h2 {
+        font-size:
+            clamp(
+                2.3rem,
+                11vw,
+                3.5rem
+            );
+
+        letter-spacing: -2px;
+    }
+
+
+    .about-introduction-content p {
+        font-size: 0.87rem;
+
+        line-height: 1.8;
+    }
+
+
+    .about-value-card {
+        min-height: 270px;
+
+        padding: 28px 24px;
+    }
+
+
+    .about-value-card h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .about-value-card p {
+        font-size: 0.82rem;
+    }
+
+
+    .about-tech-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-tech-item,
+    .about-tech-item:nth-child(odd),
+    .about-tech-item:nth-child(even) {
+        padding:
+            20px 5px;
+
+        border-left: none;
+    }
+
+
+    .about-philosophy-content h2 {
+        font-size:
+            clamp(
+                2.2rem,
+                10vw,
+                3.5rem
+            );
+
+        letter-spacing: -2px;
+    }
+
+
+    .about-philosophy-content > p:last-child {
+        font-size: 0.84rem;
+    }
+
+
+    .about-quote-mark {
+        font-size: 4rem;
+    }
+
+
+    .about-cta h2 {
+        font-size:
+            clamp(
+                2.8rem,
+                13vw,
+                4.5rem
+            );
+
+        letter-spacing: -3px;
+    }
+
+
+    .about-cta p:not(.section-label) {
+        font-size: 0.84rem;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .about-hero {
+        padding:
+            120px 16px 75px;
+    }
+
+
+    .about-introduction,
+    .about-values,
+    .about-skills,
+    .about-philosophy,
+    .about-cta {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .about-hero-number {
+        right: 16px;
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-hero-content,
+    .about-hero-number {
+        animation: none;
+    }
+
+    .about-value-card {
+        transition: none;
+    }
+
+}

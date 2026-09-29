@@ -1,0 +1,628 @@
+/* =========================================
+   RESPONSIVE DESIGN
+   MOBILE + TABLET
+   ========================================= */
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+
+    .hero {
+        gap: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .hero-image {
+        flex: 0 0 360px;
+
+        width: 360px;
+        height: 470px;
+    }
+
+
+    .image-frame {
+        width: 300px;
+        height: 390px;
+    }
+
+
+    .about-section,
+    .projects-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .about-grid {
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET / SMALL LAPTOP
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        gap: 20px;
+    }
+
+
+    .hero {
+        min-height: auto;
+
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+
+    .hero h1 {
+        font-size: clamp(3.5rem, 8vw, 5.5rem);
+    }
+
+
+    .hero-image {
+        flex: 0 0 320px;
+
+        width: 320px;
+        height: 430px;
+    }
+
+
+    .image-frame {
+        width: 270px;
+        height: 350px;
+    }
+
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-content {
+        max-width: 750px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .projects-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+
+    /* -------------------------------------
+       GLOBAL
+       ------------------------------------- */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* -------------------------------------
+       HEADER
+       ------------------------------------- */
+
+    .header {
+        height: 70px;
+
+        padding:
+            0 20px;
+    }
+
+
+    .logo {
+        font-size: 1rem;
+    }
+
+
+    .navbar {
+        display: none;
+    }
+
+
+    .theme-toggle {
+        width: 38px;
+        height: 38px;
+
+        font-size: 1rem;
+    }
+
+
+    /* -------------------------------------
+       HERO
+       ------------------------------------- */
+
+    .hero {
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 60px;
+
+        text-align: center;
+
+        padding:
+            130px 20px 90px;
+    }
+
+
+    .hero-content {
+        width: 100%;
+
+        max-width: 600px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .hero-small-text {
+        margin-bottom: 15px;
+
+        font-size: 0.68rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .hero h1 {
+        margin-bottom: 20px;
+
+        font-size:
+            clamp(3.2rem, 16vw, 5rem);
+
+        line-height: 0.95;
+
+        letter-spacing: -3px;
+    }
+
+
+    .hero h2 {
+        max-width: 350px;
+
+        margin-bottom: 18px;
+
+        font-size: 1.25rem;
+
+        line-height: 1.4;
+    }
+
+
+    .hero-description {
+        max-width: 380px;
+
+        margin-bottom: 28px;
+
+        font-size: 0.9rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* -------------------------------------
+       HERO BUTTONS
+       ------------------------------------- */
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .btn {
+        width: 100%;
+
+        min-width: 0;
+
+        padding:
+            14px 20px;
+    }
+
+
+    /* -------------------------------------
+       PROFILE IMAGE
+       ------------------------------------- */
+
+    .hero-image {
+        flex:
+            0 1 auto;
+
+        width: 100%;
+
+        height: 390px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+    .image-glow {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .image-frame {
+        width: 250px;
+        height: 320px;
+
+        border-radius:
+            130px 130px 25px 25px;
+
+        transform:
+            perspective(1000px)
+            rotateY(0deg);
+    }
+
+
+    /* -------------------------------------
+       ABOUT
+       ------------------------------------- */
+
+    .about-section {
+        min-height: auto;
+
+        padding:
+            100px 20px 90px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 55px;
+    }
+
+
+    .section-label {
+        margin-bottom: 14px;
+
+        font-size: 0.68rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    .section-heading h2 {
+        margin-bottom: 20px;
+
+        font-size:
+            clamp(2.2rem, 11vw, 3.5rem);
+
+        line-height: 1.05;
+
+        letter-spacing: -2px;
+    }
+
+
+    .section-intro {
+        font-size: 0.9rem;
+
+        line-height: 1.75;
+    }
+
+
+    /* -------------------------------------
+       ABOUT GRID
+       ------------------------------------- */
+
+    .about-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+
+    .about-content {
+        width: 100%;
+    }
+
+
+    .about-content p {
+        margin-bottom: 18px;
+
+        font-size: 0.9rem;
+
+        line-height: 1.8;
+    }
+
+
+    /* -------------------------------------
+       SKILLS CARD
+       ------------------------------------- */
+
+    .skills-card {
+        width: 100%;
+
+        padding: 25px 20px;
+
+        border-radius: 20px;
+    }
+
+
+    .skills-card-header {
+        margin-bottom: 28px;
+    }
+
+
+    .skill-item {
+        font-size: 0.8rem;
+    }
+
+
+    .skill-bar {
+        margin-bottom: 23px;
+    }
+
+
+    /* -------------------------------------
+       STATISTICS
+       ------------------------------------- */
+
+    .stats-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+        margin-top: 55px;
+    }
+
+
+    .stat-card {
+        padding: 22px 16px;
+
+        border-radius: 15px;
+    }
+
+
+    .stat-card strong {
+        font-size: 1.65rem;
+    }
+
+
+    .stat-card span {
+        font-size: 0.68rem;
+    }
+
+
+    /* -------------------------------------
+       PROJECTS
+       ------------------------------------- */
+
+    .projects-section {
+        padding:
+            100px 20px 90px;
+    }
+
+
+    .projects-heading {
+        margin-bottom: 50px;
+    }
+
+
+    .projects-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .project-card {
+        width: 100%;
+    }
+
+
+    .project-content {
+        padding: 24px 20px;
+    }
+
+
+    .project-content h3 {
+        font-size: 1.25rem;
+    }
+
+
+    .project-content p {
+        font-size: 0.85rem;
+
+        line-height: 1.7;
+    }
+
+
+    .project-tech {
+        flex-wrap: wrap;
+    }
+
+
+    /* -------------------------------------
+       BACKGROUND EFFECTS
+       ------------------------------------- */
+
+    body::before {
+        background-size:
+            55px 55px;
+
+        opacity: 0.6;
+    }
+
+
+    body::after {
+        width: 450px;
+        height: 450px;
+
+        filter: blur(45px);
+    }
+
+
+    .hero::after {
+        width: 400px;
+        height: 400px;
+
+        right: -180px;
+    }
+
+
+    .hero-content::before {
+        width: 250px;
+        height: 250px;
+
+        left: -100px;
+    }
+
+
+    .hero-image::before {
+        width: 350px;
+        height: 350px;
+
+        right: -80px;
+        bottom: -80px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+
+    .header {
+        padding:
+            0 16px;
+    }
+
+
+    .hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .hero h1 {
+        font-size:
+            clamp(2.8rem, 15vw, 4rem);
+    }
+
+
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+
+    .image-frame {
+        width: 225px;
+        height: 290px;
+    }
+
+
+    .hero-image {
+        height: 350px;
+    }
+
+
+    .about-section,
+    .projects-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 2.1rem;
+    }
+
+
+    .stats-grid {
+        gap: 10px;
+    }
+
+
+    .stat-card {
+        padding:
+            20px 12px;
+    }
+
+
+    .stat-card strong {
+        font-size: 1.45rem;
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+
+}
